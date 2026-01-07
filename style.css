@@ -1,8 +1,29 @@
+/* Update logo styling for the text placeholder */
+/*.logo {
+}*/
 
-.logo img {
-    width: 164px;
+
+.placeholder-logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #141B34;
 }
 
+.placeholder-logo span {
+    color: #00b6d1;
+}
+
+.placeholder-lang {
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.placeholder-icon {
+    font-size: 32px;
+    padding: 0px 12px;
+}
+
+/* Original CSS remains the same */
 nav {
     display: flex;
     justify-content: space-around;
@@ -25,6 +46,7 @@ nav {
 .right ul li span {
     padding: 0 5px;
 }
+
 .btn a {
     color: white;
     text-decoration: none;
@@ -56,8 +78,6 @@ section span img {
     text-align: center;
 }
 
-
-
 .btn {
     background: #00b6d1;
     padding: 14px 16px;
@@ -68,9 +88,14 @@ section span img {
     margin: 12px 0;
     cursor: pointer;
 }
-.btn a{
+
+.btn a {
     text-decoration: none;
     color: white;
+}
+
+.btn.blue {
+    background-color: #007bff;
 }
 
 .green {
@@ -85,9 +110,9 @@ section span img {
     font-size: 12px;
 }
 
-.second { 
+.second {
     max-width: 50vw;
-    margin: auto; 
+    margin: auto;
 }
 
 .item {
@@ -99,26 +124,23 @@ section span img {
     text-align: center;
 }
 
-.item-lang{
+.item-lang {
     font-weight: 700;
     text-align: center;
     padding-bottom: 36px;
 }
 
-.grid{
+.grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap:12px
+    gap: 12px
 }
 
-.download :nth-child(2){
+.download :nth-child(2) {
     font-size: 23px;
 }
 
-.download img{
-    padding: 0px 12px;
-}
-.download{
+.download {
     display: flex;
     font-family: sans-serif;
     gap: 10px;
@@ -126,7 +148,19 @@ section span img {
 }
 
 @media screen and (max-width: 1145px) {
-    .grid{ 
-        grid-template-columns: 1fr; 
+    .grid {
+        grid-template-columns: 1fr;
     }
+}
+
+/* Optional: Add hover effects for better UX */
+.btn:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+    transition: all 0.2s ease;
+}
+
+.item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
 }
